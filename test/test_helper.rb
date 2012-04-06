@@ -11,7 +11,7 @@ class TestConnection
   def initialize
     @bytes = []
   end
-  def write(byte)
+  def putc(byte)
     @bytes << byte
   end
 end

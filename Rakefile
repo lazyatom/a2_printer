@@ -39,10 +39,10 @@ spec = Gem::Specification.new do |s|
 
   # If you want to depend on other gems, add them here, along with any
   # relevant versions
-  # s.add_dependency("some_other_gem", "~> 0.1.0")
+  s.add_dependency("serialport", "~> 1.0.4")
 
   # If your tests use any gems, include them here
-  # s.add_development_dependency("mocha") # for example
+  s.add_development_dependency("mocha") # for example
 end
 
 # This task actually builds the gem. We also regenerate a static

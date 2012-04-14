@@ -1,14 +1,14 @@
 require "test_helper"
-require "printer"
+require "a2_printer"
 
-describe Printer do
+describe A2Printer do
   def sent_bytes
     @test_connection.bytes
   end
 
   before do
     @test_connection = TestConnection.new
-    @printer = Printer.new(@test_connection)
+    @printer = A2Printer.new(@test_connection)
   end
 
   it "can be reset" do

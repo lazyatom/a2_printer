@@ -1,6 +1,6 @@
 require "serial_connection"
 
-class Printer
+class A2Printer
   def initialize(connection)
     @connection = connection
     @print_mode = 0

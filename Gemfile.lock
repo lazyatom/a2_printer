@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    printer (0.1.0)
+    a2-printer (0.1.0)
       serialport (~> 1.0.4)
 
 GEM
@@ -16,5 +16,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  a2-printer!
   mocha
-  printer!

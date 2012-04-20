@@ -14,8 +14,8 @@ class A2Printer
     reset()
 
     heat_interval = 50 # 2 is default from page 23 of datasheet. Controls speed of printing and darkness
-    print_density = 15 # Not sure what the defaut is. Testing shows the max helps darken text. From page 23.
-    print_break_time = 15 # Not sure what the defaut is. Testing shows the max helps darken text. From page 23.
+    print_density = 15 # Not sure what the default is. Testing shows the max helps darken text. From page 23.
+    print_break_time = 15 # Not sure what the default is. Testing shows the max helps darken text. From page 23.
 
     write_bytes(27, 55)
     write_bytes(7) # Default 64 dots = 8*('7'+1)

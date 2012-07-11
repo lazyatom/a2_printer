@@ -30,11 +30,11 @@ spec = Gem::Specification.new do |s|
   s.has_rdoc          = true
   # You should probably have a README of some kind. Change the filename
   # as appropriate
-  # s.extra_rdoc_files  = %w(README)
-  # s.rdoc_options      = %w(--main README)
+  s.extra_rdoc_files  = %w(README.md)
+  s.rdoc_options      = %w(--main README.md)
 
   # Add any extra files to include in the gem (like your README)
-  s.files             = %w(Gemfile) + Dir.glob("{test,lib}/**/*")
+  s.files             = %w(README.md Gemfile) + Dir.glob("{test,lib}/**/*")
   s.require_paths     = ["lib"]
 
   # If you want to depend on other gems, add them here, along with any
@@ -50,7 +50,7 @@ end
 # be automatically building a gem for this project. If you're not
 # using GitHub, edit as appropriate.
 #
-# To publish your gem online, install the 'gemcutter' gem; Read more 
+# To publish your gem online, install the 'gemcutter' gem; Read more
 # about that here: http://gemcutter.org/pages/gem_docs
 Gem::PackageTask.new(spec) do |pkg|
   pkg.gem_spec = spec
@@ -71,7 +71,7 @@ task :package => :gemspec
 
 # Generate documentation
 RDoc::Task.new do |rd|
-  
+
   rd.rdoc_files.include("lib/**/*.rb")
   rd.rdoc_dir = "rdoc"
 end

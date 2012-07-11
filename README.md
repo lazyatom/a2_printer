@@ -6,8 +6,8 @@ A small library for working with cheap thermal "A2" printers, such as those avai
 Simple example
 ------
 
-serial_connection = SerialConnection.new("/dev/serial")
-printer = A2Printer.new(serial_connection)
+    serial_connection = SerialConnection.new("/dev/serial")
+    printer = A2Printer.new(serial_connection)
 
     printer.begin
     printer.println("Hello world!")

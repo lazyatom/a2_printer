@@ -1,9 +1,8 @@
 require "serialport"
 
 class SerialConnection
-  def initialize(port=nil)
-    port_str = port || "/dev/tty.usbserial-FTF8DKJT"
-    baud_rate = 19200
+  def initialize(port_str=nil, baud_rate = 19200)
+    port_str ||= "/dev/tty.usbserial-FTF8DKJT"
     data_bits = 8
     stop_bits = 1
     parity = SerialPort::NONE

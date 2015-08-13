@@ -21,7 +21,7 @@ spec = Gem::Specification.new do |s|
 
   # Change these as appropriate
   s.name              = "a2_printer"
-  s.version           = "0.1.0"
+  s.version           = "0.2.0"
   s.summary           = "Sending commands to a small thermal printer"
   s.author            = "James Adam"
   s.email             = "james@lazyatom.com"
@@ -39,10 +39,11 @@ spec = Gem::Specification.new do |s|
 
   # If you want to depend on other gems, add them here, along with any
   # relevant versions
-  s.add_dependency("serialport", "~> 1.0.4")
+  s.add_dependency("serialport", "~> 1.3")
 
   # If your tests use any gems, include them here
-  s.add_development_dependency("mocha") # for example
+  s.add_development_dependency("minitest")
+  s.add_development_dependency("mocha")
 end
 
 # This task actually builds the gem. We also regenerate a static

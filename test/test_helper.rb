@@ -2,7 +2,7 @@ require "minitest/autorun"
 require "rubygems"
 require "bundler"
 Bundler.require(:default, :test)
-require "mocha"
+require "mocha/setup"
 
 $LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
 
@@ -15,4 +15,3 @@ class TestConnection
     @bytes << byte
   end
 end
-    
